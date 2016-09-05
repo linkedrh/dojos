@@ -1,0 +1,1 @@
+./node_modules/mocha/bin/mocha ./spec/objetoExemplo.spec.js -r ./js/exemplo.js
