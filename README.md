@@ -16,3 +16,19 @@ A função deverá aceitar números inteiros entre 1 e 3999. Para um parâmetro 
 </table>
 
 Bônus: se sobrar tempo, fazer a função que faça a conversão inversa.
+
+EDIT: 
+
+Para executar esta solução....
+
+<ol>
+	<li>Instalar o <a href="https://nodejs.org/en/download/">Node.js</a>a> em sua máquina</li>
+	<li>Acessar a pasta <pre>js</pre> do projeto e executar o comando: <pre>node server.js</pre></li>
+</ol>
+
+Para executar os testes desta solução....
+
+<ol>
+  <li>Instalar o <a href="https://mochajs.org/">Mocha</a>a> em sua máquina</li>
+  <li>Acessar a pasta <pre>spec</pre> do projeto e executar o comando: <pre>mocha indoArabicoRomano.spec.js</pre></li>
+</ol>

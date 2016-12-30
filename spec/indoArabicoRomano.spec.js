@@ -3,55 +3,54 @@ const indoArabicoRomano = require("../js/indoArabicoRomano");
 
 describe('indoArabicoRomano', function() {
   describe('converteIndoArabicoParaRomano', function() {
-    it('quando o usuário digitar 1, será retornado I', function() {
+    it('quando o usuario digitar 1, sera retornado I', function() {
       assert.equal("I", indoArabicoRomano.converteIndoArabicoParaRomano(1));
     });
 
-    it('quando o usuário digitar 2, será retornado II', function() {
-      assert.equal("II", indoArabicoRomano.converteIndoArabicoParaRomano(2));
-    });
-
-    it('quando o usuário digitar 3, será retornado III', function() {
+    it('quando o usuario digitar 3, sera retornado III', function() {
       assert.equal("III", indoArabicoRomano.converteIndoArabicoParaRomano(3));
     });
-	
-	it('quando o usuário digitar 4, será retornado IV', function() {
-      assert.equal("IV", indoArabicoRomano.converteIndoArabicoParaRomano(4));
-    });
-	
-	it('quando o usuário digitar 1000, será retornado M', function() {
-      assert.equal("M", indoArabicoRomano.converteIndoArabicoParaRomano(1000));
-    });
-	
-	it('quando o usuário digitar 2000, será retornado MM', function() {
-      assert.equal("MM", indoArabicoRomano.converteIndoArabicoParaRomano(2000));
+
+    it('quando o usuario digitar 5, sera retornado V', function() {
+      assert.equal("V", indoArabicoRomano.converteIndoArabicoParaRomano(5));
     });
 
-	it('quando o usuário digitar 900, será retornado CM', function() {
-      assert.equal("CM", indoArabicoRomano.converteIndoArabicoParaRomano(900));
+    it('quando o usuario digitar 10, sera retornado X', function() {
+      assert.equal("X", indoArabicoRomano.converteIndoArabicoParaRomano(10));
     });
-	
-	it('quando o usuário digitar 500, será retornado D', function() {
+
+    it('quando o usuario digitar 50, sera retornado L', function() {
+      assert.equal("L", indoArabicoRomano.converteIndoArabicoParaRomano(50));
+    });
+
+    it('quando o usuario digitar 100, sera retornado C', function() {
+      assert.equal("C", indoArabicoRomano.converteIndoArabicoParaRomano(100));
+    });
+
+    it('quando o usuario digitar 500, sera retornado D', function() {
       assert.equal("D", indoArabicoRomano.converteIndoArabicoParaRomano(500));
     });
-	
-	it('quando o usuário digitar 800, será retornado DCCC', function() {
-      assert.equal("DCCC", indoArabicoRomano.converteIndoArabicoParaRomano(800));
+
+    it('quando o usuario digitar 1000, sera retornado M', function() {
+      assert.equal("M", indoArabicoRomano.converteIndoArabicoParaRomano(1000));
     });
-	
-	context("quando o valor for inválido", function() {
-		it('quando o usuário digitar 0, não será convertido em romano', function() {
-		   assert.equal("", indoArabicoRomano.converteIndoArabicoParaRomano(0));
-		});
-		
-		it('quando o usuário digitar 4000, não será convertido em romano', function() {
-			assert.equal("", indoArabicoRomano.converteIndoArabicoParaRomano(4000));
-		});
 
-		it('quando o usuário digitar um valor decimal, não será convertido em romano', function() {
-		   assert.equal("", indoArabicoRomano.converteIndoArabicoParaRomano(3.14));
-		});
+    it('quando o usuario digitar 1999, sera retornado MCMXCIX', function() {
+      assert.equal("MCMXCIX", indoArabicoRomano.converteIndoArabicoParaRomano(1999));
+    });
 
-	});
+    context("nao sera realizada a conversao...", function() {
+        it('quando o usuario digitar 0 ou um valor menor', function() {
+           assert.equal("Valor nao convertido", indoArabicoRomano.converteIndoArabicoParaRomano(0));
+        });
+        
+        it('quando o usuario digitar 4000 ou um valor maior', function() {
+            assert.equal("Valor nao convertido", indoArabicoRomano.converteIndoArabicoParaRomano(4000));
+        });
+
+        it('quando o usuario digitar um valor decimal', function() {
+           assert.equal("Valor nao convertido", indoArabicoRomano.converteIndoArabicoParaRomano(3.14));
+        });
+    });
   });
 });
