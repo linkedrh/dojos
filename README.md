@@ -22,13 +22,13 @@ EDIT:
 Para executar esta solução....
 
 <ol>
-	<li>Instalar o <a href="https://nodejs.org/en/download/">Node.js</a>a> em sua máquina</li>
-	<li>Acessar a pasta <pre>js</pre> do projeto e executar o comando: <pre>node server.js</pre></li>
+	<li>Instalar o <a href="https://nodejs.org/en/download/">Node.js</a> em sua máquina</li>
+	<li>Acessar a pasta <strong>js</strong> do projeto e executar o comando: <pre>node server.js</pre></li>
 </ol>
 
 Para executar os testes desta solução....
 
 <ol>
-  <li>Instalar o <a href="https://mochajs.org/">Mocha</a>a> em sua máquina</li>
-  <li>Acessar a pasta <pre>spec</pre> do projeto e executar o comando: <pre>mocha indoArabicoRomano.spec.js</pre></li>
+  <li>Instalar o <a href="https://mochajs.org/">Mocha</a> em sua máquina</li>
+  <li>Acessar a pasta <strong>spec</strong> do projeto e executar o comando: <pre>mocha indoArabicoRomano.spec.js</pre></li>
 </ol>
