@@ -17,18 +17,19 @@ A função deverá aceitar números inteiros entre 1 e 3999. Para um parâmetro 
 
 Bônus: se sobrar tempo, fazer a função que faça a conversão inversa.
 
-EDIT: 
+# EDIT
 
-Para executar esta solução....
+Para utilizar a solução....
 
 <ol>
 	<li>Instalar o <a href="https://nodejs.org/en/download/">Node.js</a> em sua máquina</li>
 	<li>Acessar a pasta <strong>js</strong> do projeto e executar o comando: <pre>node server.js</pre></li>
+  <li>Abrir a página <strong>index.html</strong></li>
 </ol>
 
-Para executar os testes desta solução....
+Para executar os testes da solução....
 
 <ol>
   <li>Instalar o <a href="https://mochajs.org/">Mocha</a> em sua máquina</li>
-  <li>Acessar a pasta <strong>spec</strong> do projeto e executar o comando: <pre>mocha indoArabicoRomano.spec.js</pre></li>
+  <li>Acessar a pasta <strong>spec</strong> do projeto e executar o comando: <pre>mocha conversor.spec.js</pre></li>
 </ol>

@@ -2,7 +2,7 @@ var HttpDispatcher = require('../node_modules/httpdispatcher');
 var http           = require('http');
 var dispatcher     = new HttpDispatcher();
 
-const indoArabicoRomano = require("../js/indoArabicoRomano");
+const conversor = require("../js/conversor");
 
 const PORT = 8080; 
 
@@ -25,7 +25,23 @@ dispatcher.onGet("/converterIndoArabicoParaRomano", function(req, res) {
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,contenttype');
     res.setHeader('Access-Control-Allow-Credentials', true);
 
-    var valor = indoArabicoRomano.converteIndoArabicoParaRomano(req.params.valor);
+    var valor = conversor.converterIndoArabicoParaRomano(req.params.valor);
+
+    res.writeHead(200, {'Content-Type': 'application/json'});
+    var json = JSON.stringify({ 
+        valorConvertido: valor
+    });
+
+    res.end(json);
+}); 
+
+dispatcher.onGet("/converterRomanoParaIndoArabico", function(req, res) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,contenttype');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    var valor = conversor.converterRomanoParaIndoArabico(req.params.valor);
 
     res.writeHead(200, {'Content-Type': 'application/json'});
     var json = JSON.stringify({ 
