@@ -19,15 +19,7 @@ Bônus: se sobrar tempo, fazer a função que faça a conversão inversa.
 
 # EDIT
 
-Para utilizar a solução....
-
-<ol>
-	<li>Instalar o <a href="https://nodejs.org/en/download/">Node.js</a> em sua máquina</li>
-	<li>Acessar a pasta <strong>js</strong> do projeto e executar o comando: <pre>node server.js</pre></li>
-  <li>Abrir a página <strong>index.html</strong></li>
-</ol>
-
-Para executar os testes da solução....
+Para executar os testes da solução:
 
 <ol>
   <li>Instalar o <a href="https://mochajs.org/">Mocha</a> em sua máquina</li>
